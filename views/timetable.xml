@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="timetable_view_form" model="ir.ui.view">
+        <field name="name">Timetable Form</field>
+        <field name="model">timetable</field>
+        <field name="arch" type="xml">
+            <form string="Timetable">
+                <group>
+                    <field name="group_id"/>
+                    <field name="weekday"/>
+                    <field name="period"/>
+                    <field name="subject_id"/>
+                </group>
+            </form>
+        </field>
+    </record>
+</odoo>

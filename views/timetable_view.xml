@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="timetable_page" name="Timetables">
+        <t t-call="website.layout">
+            <div class="container">
+                Hello Admin!
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td>
+                                Group Name
+                            </td>
+                            <td>
+                                WeekDay
+                            </td>
+                            <td>
+                                Interval
+                            </td>
+                            <td>
+                                Subject
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="timetables" t-as="timetable">
+                            <tr>
+                                <td>
+                                     <t t-esc="timetable.group_id.name"/>
+                                </td>
+                                <td>
+                                     <t t-esc="timetable.weekday"/>
+                                </td>
+                                <td>
+                                     <t t-esc="timetable.period"/>
+                                </td>
+                                <td>
+                                     <t t-esc="timetable.subject_id.name"/>
+                                </td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </div>
+        </t>
+    </template>
+</odoo>

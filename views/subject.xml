@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="subject_view_form" model="ir.ui.view">
+        <field name="name">Subject Form</field>
+        <field name="model">subject</field>
+        <field name="arch" type="xml">
+            <form string="Subject">
+                <group>
+                    <field name="name"/>
+                    <field name="code"/>
+                </group>
+            </form>
+        </field>
+    </record>
+</odoo>

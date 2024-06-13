@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="grade_page" name="Grades">
+        <t t-call="website.layout">
+            <div class="container">
+                Hello Admin!
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td>
+                                Name
+                            </td>
+                            <td>
+                                Email
+                            </td>
+                            <td>
+                                Phone
+                            </td>
+                            <td>
+                                Address
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="grades" t-as="grade">
+                            <tr>
+                                <td>
+                                     <t t-esc="grade.student_id.name"/>
+                                </td>
+                                <td>
+                                     <t t-esc="grade.subject_id.name"/>
+                                </td>
+                                <td>
+                                     <t t-esc="grade.grade"/>
+                                </td>
+                                <td>
+                                     <t t-esc="grade.semester"/>
+                                </td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </div>
+        </t>
+    </template>
+</odoo>

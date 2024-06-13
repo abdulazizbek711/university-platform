@@ -1,0 +1,22 @@
+{
+    'name': 'University Platform',
+    'version': '1.0.1',
+    'depends': ['base'],
+    'data': [
+        'security/ir.model.access.csv',
+        'views/grade.xml',
+        'views/group.xml',
+        'views/student.xml',
+        'views/subject.xml',
+        'views/teacher.xml',
+        'views/timetable.xml',
+        'views/dashboard.xml',
+        'views/student_view.xml',
+        'views/timetable_view.xml',
+        'views/grades_view.xml',
+        'views/menu.xml',
+    ],
+    'installable': True,
+    'application': True,
+    'auto_install': False,
+}

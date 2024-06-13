@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="student_page" name="Students">
+        <t t-call="website.layout">
+            <div class="container">
+                Hello Admin!
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <td>
+                                Name
+                            </td>
+                            <td>
+                                Email
+                            </td>
+                            <td>
+                                Phone
+                            </td>
+                            <td>
+                                Address
+                            </td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <t t-foreach="students" t-as="student">
+                            <tr>
+                                <td>
+                                     <t t-esc="student.name"/>
+                                </td>
+                                <td>
+                                     <t t-esc="student.email"/>
+                                </td>
+                                <td>
+                                     <t t-esc="student.phone"/>
+                                </td>
+                                <td>
+                                     <t t-esc="student.address"/>
+                                </td>
+                            </tr>
+                        </t>
+                    </tbody>
+                </table>
+            </div>
+        </t>
+    </template>
+</odoo>

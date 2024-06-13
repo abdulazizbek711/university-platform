@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_root"
+                  name="Dashboard"
+                  sequence="10"/>
+        <menuitem id="menu_operations"
+                  name="Operations"
+                  parent="menu_root"
+                  sequence="10"/>
+
+        <record model="ir.actions.act_window" id="action_student">
+            <field name="name">Student</field>
+            <field name="res_model">student</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="student"
+                  name="Student"
+                  parent="menu_operations"
+                  action="action_student"
+                  sequence="10"/>
+
+        <record model="ir.actions.act_window" id="action_grade">
+            <field name="name">Grades</field>
+            <field name="res_model">grade</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="grade"
+                  name="Grades"
+                  parent="menu_operations"
+                  action="action_grade"
+                  sequence="20"/>
+
+        <record model="ir.actions.act_window" id="action_group">
+            <field name="name">Groups</field>
+            <field name="res_model">group</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="group"
+                  name="Groups"
+                  parent="menu_operations"
+                  action="action_group"
+                  sequence="30"/>
+
+        <record model="ir.actions.act_window" id="action_subject">
+            <field name="name">Subjects</field>
+            <field name="res_model">subject</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="subject"
+                  name="Subjects"
+                  parent="menu_operations"
+                  action="action_subject"
+                  sequence="40"/>
+
+        <record model="ir.actions.act_window" id="action_teacher">
+            <field name="name">Teacher</field>
+            <field name="res_model">teacher</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="teacher"
+                  name="Teacher"
+                  parent="menu_operations"
+                  action="action_teacher"
+                  sequence="50"/>
+
+        <record model="ir.actions.act_window" id="action_timetable">
+            <field name="name">Timetable</field>
+            <field name="res_model">timetable</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="timetable"
+                  name="Timetable"
+                  parent="menu_operations"
+                  action="action_timetable"
+                  sequence="60"/>
+    </data>
+</odoo>

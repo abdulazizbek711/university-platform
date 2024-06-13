@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="grade_view_form" model="ir.ui.view">
+        <field name="name">Grade Form</field>
+        <field name="model">grade</field>
+        <field name="arch" type="xml">
+            <form string="Grade">
+                <group>
+                    <field name="student_id"/>
+                    <field name="subject_id"/>
+                    <field name="grade"/>
+                    <field name="semester"/>
+                </group>
+            </form>
+        </field>
+    </record>
+</odoo>

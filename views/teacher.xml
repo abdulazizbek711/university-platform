@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="teacher_view_form" model="ir.ui.view">
+        <field name="name">Teacher Form</field>
+        <field name="model">teacher</field>
+        <field name="arch" type="xml">
+            <form string="Teacher">
+                <group>
+                    <field name="name"/>
+                    <field name="email"/>
+                    <field name="phone"/>
+                    <field name="address"/>
+                    <field name="profile_picture" widget="image"/>
+                </group>
+            </form>
+        </field>
+    </record>
+</odoo>
